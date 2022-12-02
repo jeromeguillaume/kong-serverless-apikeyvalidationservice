@@ -7,7 +7,7 @@ This Kong Servless Function calls a SOAP request on WSO2 IdP to get a JWT.
 - Add the JWT in ```X-JWT-Assertion``` Upstream request header
 
 ## How deploy this Kong Function?
-1) Modify the SOAP URL of the IdP server, see Lua command: ```httpc:request_uri("http:/<wso2-idp-server>:8080/services/...```)
+1) Modify the SOAP URL of the IdP server, see Lua command: ```httpc:request_uri("http:/<wso2-idp-server>:8080/services/...")```
 2) Modify the ```["Authorization"] = "Basic <*** change-me ***>"``` value
 3) Deploy the Kong serverless function
 ```
